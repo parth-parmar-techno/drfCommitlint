@@ -6,8 +6,15 @@ repos:
         name: Ruff Linter
         entry: ruff check
         language: python
-        args: [ --fix ]
+        args: [--fix ]
         types: [python]
+      - id: ruff-format  # New hook for formatting
+        # name: Ruff Formatter
+        # entry: ruff format
+        # args: [--fix]  # Format code in-place
+        # language: system  # No specific language, runs for all files
+        # types: [python]  # Format all file types (adjust if needed)
+
 
   - repo: https://github.com/opensource-nepal/commitlint
     rev: v1.0.0  # Replace with the correct tag/version
